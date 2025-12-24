@@ -22,7 +22,7 @@ func SetupRouter(boxHandler *handler.LetterBoxHandler) *gin.Engine {
 
 	api := r.Group("/api")
 	{
-		api.POST("/boxe", boxHandler.CreateLetterBox)
+		api.POST("/letterbox", boxHandler.CreateLetterBox)
 		// api.GET("/invite/:code", boxHandler.GetByInviteCode)
 	}
 
